@@ -22,9 +22,7 @@ jobs:
     - name: Insatll cURL
       run: choco install curl --acceptlicense --confirm
     - name: Build Whitehole
-      run: ant -Dnb.internal.action.name=build jar
-    - name: Run Zip.cmd
-      run: Zip.cmd
+      run: Build.cmd
       shell: cmd
     - name: Upload Files
       uses: actions/upload-artifact@v2
